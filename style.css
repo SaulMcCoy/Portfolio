@@ -1,0 +1,46 @@
+div{
+    max-width: 700px;
+    height: 200px;
+    background-color: brown;
+    margin: 20px 20px;
+
+}
+
+nav{
+    background-color:black;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li{
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+#title-text{
+    color: white;
+}
+
+#aboutMe{
+
+}
+
+#experience{
+
+}
+
+#projects{
+
+}
+
+#contactMe{
+
+}
