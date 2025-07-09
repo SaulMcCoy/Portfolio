@@ -1,37 +1,95 @@
+body{
+}
+
 div{
-    max-width: 700px;
-    height: 200px;
-    background-color: brown;
-    margin: 20px 20px;
+   /* max-width: 700px;*/
+    /* height: 200px;
+    background-color: navy;
+    margin: 20px 20px; */
 
 }
 
+#aboutMeP{
+    color: azure;
+    font-family:"Roboto",sans-serif;
+    text-align: center;
+}
+
 nav{
-    background-color:black;
+    
+    text-decoration: none;
+
 }
 
 nav ul{
     display: flex;
     justify-content: space-around;
+    list-style: none;
+
 }
 
 nav li{
     text-decoration: none;
 }
 
-nav ul li a{
-    color: white;
+nav a{
+    color: #B0B2B8;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+
+
+#navbar a:hover{
+    color: #5b567c;
+    text-decoration: none;
+    font-size: larger;
+    box-shadow:  0 4px 8px rgba(254, 3, 3, 0.2);
+    font-weight: bold;
+
 
 }
 
+
 #title-text{
-    color: white;
+    color: #FFFDD0;
 }
 
 #aboutMe{
+    background-color: navy;
+    align-items: center;
+    padding-bottom: 10%;
 
 }
+#aboutme #social-link{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#aboutMe #social-link a{
+    color: rgb(121, 27, 27);
+   
+  
+}
+
+.social-btn{
+   
+    width: 400px;
+    height: 300px;
+    align-items: center;
+}
+
+#aboutMe h1{
+    text-align: center; 
+    color: #FFFDD0 ; 
+    font-size: 2.5em;  
+    font-family:"Roboto",sans-serif;
+    padding-top: 10%;
+
+}
+
 
 #experience{
 
