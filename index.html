@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <nav id="navbar">
-      <ul>
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#experience"> Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contactMe">Contact Me</a></li>
-      </ul>  
-        
+        <ul>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#experience"> Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+
     </nav>
 
     <section id="aboutMe">
@@ -27,10 +31,12 @@
         </div>
         <div id="social-links">
             <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/SaulMcCoy" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/SaulMcCoy" target="_blank" class="social-btn"><i
+                    class="fa-brands fa-github"></i></a>
         </div>
         <div>
-            <p id="aboutMeP">Hello my name is Saul E. McCoy, I am a full stack and game developer from Queens,NY. I am a Senior attending Queens Collage set to graduate with a B.S in computer science. </p>
+            <p id="aboutMeP">Hello my name is Saul E. McCoy, I am a full stack and game developer from Queens,NY. I am a
+                Senior attending Queens Collage set to graduate with a B.S in computer science. </p>
         </div>
     </section>
 
@@ -39,6 +45,40 @@
             <h2 id="title-text">
                 Experience
             </h2>
+
+
+
+
+            <div
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo List App </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">I've built a full stack CRUD application.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Live Site 
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    GithubS 
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            <!--Find the github svg to put there instead of array. -->
+                    </svg>
+                </a>
+                
+                
+
+            </div>
+
         </div>
     </section>
 
@@ -57,6 +97,7 @@
             </h2>
         </div>
     </section>
-    
+
 </body>
+
 </html>

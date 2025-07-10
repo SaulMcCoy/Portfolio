@@ -37,16 +37,19 @@ nav a{
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 200;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
 }
 
 
-#navbar a:hover{
+nav a:hover{
     color: #5b567c;
     text-decoration: none;
-    font-size: larger;
-    box-shadow:  0 4px 8px rgba(254, 3, 3, 0.2);
-    font-weight: bold;
+    transform: scale(1.05);
+    /* box-shadow:  0 4px 8px rgba(254, 3, 3, 0.2); */
+    font-weight: 500;
 
 
 }
@@ -62,23 +65,32 @@ nav a{
     padding-bottom: 10%;
 
 }
-#aboutme #social-link{
+
+
+#aboutMe #social-links {
     display: flex;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
 }
 
-#aboutMe #social-link a{
-    color: rgb(121, 27, 27);
-   
-  
+#aboutMe #social-links a{
+     color: #FFFDD0;
+    
 }
 
-.social-btn{
-   
-    width: 400px;
-    height: 300px;
+#aboutMe #social-links i:hover{
+     color: orange;
+     transform: scale(1.25);
+     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+     
+    
+}
+
+.social-btn i{
+    font-size: 1.4rem;
     align-items: center;
+    
 }
 
 #aboutMe h1{
