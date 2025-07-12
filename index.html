@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,7 +31,8 @@
             <h1>Saul E. McCoy</h1>
         </div>
         <div id="social-links">
-            <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/saul-e-mccoy-7a5856303/" target="_blank" class="social-btn"><i
+                    class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/SaulMcCoy" target="_blank" class="social-btn"><i
                     class="fa-brands fa-github"></i></a>
         </div>
@@ -49,36 +51,6 @@
 
 
 
-            <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo List App </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">I've built a full stack CRUD application.</p>
-                <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Live Site 
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                </a>
-                <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    GithubS 
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            <!--Find the github svg to put there instead of array. -->
-                    </svg>
-                </a>
-                
-                
-
-            </div>
-
         </div>
     </section>
 
@@ -88,6 +60,39 @@
                 Projects
             </h2>
         </div>
+
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Todo List Project</h5>
+                        <p class="card-text">
+                            With this project I created a CRUD application using HTML, CSS with the Bootstrap framework,
+                            JavaScript, and MongoDB to store the to-do list items.
+                        </p>
+                        <a href="https://github.com/SaulMcCoy/To_do_list" target="_blank">
+                            <i class="fa-brands fa-github" id="projectButtons"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Price Pro</h5>
+                        <p class="card-text">
+                            A prediction tool for profitability within Real Estate. This is a project that I worked on
+                            with two of my classmates where we used java to create this application.
+                        </p>
+                        <a href="https://github.com/jamespost1/HomePricePro" target="_blank">
+                            <i class="fa-brands fa-github" id="projectButtons"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section id="contactMe">
