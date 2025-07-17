@@ -22,8 +22,9 @@ br{
 }
 
 nav{
-    
+    background-color: #11121A;
     text-decoration: none;
+    padding-bottom: 10px;
 
 }
 
@@ -51,10 +52,10 @@ nav a{
 
 
 nav a:hover{
-    color: #5b567c;
+    color: snow;
     text-decoration: none;
     transform: scale(1.05);
-    /* box-shadow:  0 4px 8px rgba(254, 3, 3, 0.2); */
+    box-shadow:  10px 5px 5px #C7A7D3;
     font-weight: 500;
 
 
