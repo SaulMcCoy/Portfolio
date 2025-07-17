@@ -132,12 +132,22 @@ nav a:hover{
 
 }
 
+.card{
+  transition: transform 0.3s, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.card:hover{
+ transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
 #technical-skils{
 
 }
 
 #hobbies{
-  
+
 }
 
 #contactMe{
