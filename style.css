@@ -21,7 +21,7 @@ br{
     text-align: center;
 }
 
-nav{
+/* nav{
     background-color: #11121A;
     text-decoration: none;
     padding-bottom: 10px;
@@ -59,7 +59,7 @@ nav a:hover{
     font-weight: 500;
 
 
-}
+} */
 
 
 #title-text{
@@ -132,7 +132,16 @@ nav a:hover{
 
 }
 
+#technical-skils{
+
+}
+
+#hobbies{
+  
+}
+
 #contactMe{
+  background-color: navy;
 
 }
 
