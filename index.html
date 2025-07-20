@@ -16,9 +16,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Saul E. McCoy</a>
+            <!--Dark and light mode toogle button-->
+            <button id="modeToggle" class="btn btn-outline-light ms-1" type="button" style="border: snow 1px solid;">
+                🌙
+            </button>
+
+            <!--Creates the Burger once the screen gets to a certain size-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +59,7 @@
             <div class="row align-items-center">
                 <!--Left side image-->
                 <div class="col-md-4 text-center md-4 mb-md-0">
-                    <img src="./IMG_3119.jpg" class="img-fluid rounded shadow"
+                    <img src="./images/IMG_3119.jpg" class="img-fluid rounded shadow"
                         style="border: 2px solid #fffdd0; max-height: 350px;">
                 </div>
                 <!--Right side about me-->
@@ -69,25 +75,13 @@
                                 class="fa-brands fa-github"></i></a>
                     </div>
                     <div>
-                        <p id="aboutMeP">Hello my name is Saul E. McCoy, I am a full stack and game developer from
+                        <p id="aboutMeP">Hello my name is Saul E. McCoy, I am a full-stack and game developer from
                             Queens,NY. I
                             am a
                             Senior attending Queens Collage set to graduate with a B.S in computer science. </p>
                     </div>
                 </div>
             </div>
-    </section>
-
-    <section id="experience">
-        <div>
-            <h2 id="title-text">
-                Experience
-            </h2>
-
-
-
-
-        </div>
     </section>
 
     <section id="projects">
@@ -139,13 +133,13 @@
                 <div class="col-sm-6 mb-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Todo List Project</h5>
+                            <h5 class="card-title">Gym Website Hackathon Project</h5>
                             <p class="card-text">
-                                With this project I created a CRUD application using HTML, CSS with the Bootstrap
-                                framework,
-                                JavaScript, and MongoDB to store the to-do list items.
+                                In my summer 355 we were given the task to create a gym website for a client and present
+                                it to the class, using HTML with bootstrap and CSS, we were able to create this within 2
+                                hours.
                             </p>
-                            <a href="https://github.com/SaulMcCoy/To_do_list" target="_blank">
+                            <a href="https://github.com/SaulMcCoy/Hackathon_GymWebsite" target="_blank">
                                 <i class="fa-brands fa-github" id="projectButtons"></i>
                             </a>
                         </div>
@@ -155,13 +149,13 @@
                 <div class="col-sm-6 mb-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Home Price Pro</h5>
+                            <h5 class="card-title">Handwritten Digit Classifier </h5>
                             <p class="card-text">
-                                A prediction tool for profitability within Real Estate. This is a project that I worked
-                                on
-                                with two of my classmates where we used java to create this application.
+                                From a dataset given given to us we were given a task to recognize images of handwritten
+                                without using Convolutional Neural Networks (CNNs). So for this project I used Support
+                                Vector Machines (SVMs) and included is a report on the process of selecting a algorithm.
                             </p>
-                            <a href="https://github.com/jamespost1/HomePricePro" target="_blank">
+                            <a href="https://github.com/SaulMcCoy/Digit-classifier" target="_blank">
                                 <i class="fa-brands fa-github" id="projectButtons"></i>
                             </a>
                         </div>
@@ -172,65 +166,218 @@
     </section>
 
     <section id="technical-skills">
+        <div class="container py-5">
+            <h2 id="title-text">My Technical Skills</h2>
 
-    </section>
+            <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
 
-    <section id="hobbies">
+                    <!-- Front-End - Smokey Background -->
+                    <div class="carousel-item active" style="height: 400px;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="card bg-smokey p-4 shadow-lg rounded-4" style="width: 22rem;">
+                                <div class="text-center">
+                                    <i class="bi bi-laptop display-3"></i>
+                                    <h4 class="mt-3">Front-End</h4>
+                                    <p class="mb-0">HTML, CSS, JavaScript</p>
+                                    <p class="mb-0">Bootstrap, TailWind</p> <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </section>
+                    <!-- Back-End - Smokey Background -->
+                    <div class="carousel-item" style="height: 400px;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="card bg-smokey p-4 shadow-lg rounded-4" style="width: 22rem;">
+                                <div class="text-center">
+                                    <i class="bi bi-hdd-network display-3 text-success"></i>
+                                    <h4 class="mt-3">Back-End</h4>
+                                    <p class="mb-0">Node.js, Express, C#</p>
+                                    <p class="mb-0">Python, C++, Java</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="contactMe" class="py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h2 id="title-text" class="mb-4">Contact Me</h2>
+                    <!-- Database - Smokey Background -->
+                    <div class="carousel-item" style="height: 400px;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="card bg-smokey p-4 shadow-lg rounded-4" style="width: 22rem;">
+                                <div class="text-center">
+                                    <i class="bi bi-database display-3 text-warning"></i>
+                                    <h4 class="mt-3">Database</h4>
+                                    <p class="mb-0">MongoDB, MySQL</p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="mb-3">
-                <i class="fas fa-envelope fa-lg me-2"></i>
-                <button onclick="copyToClipboard('smeccoy03@gmail.com', 'Email')"
-                    class="btn btn-link text-white text-decoration-none p-0">Email</button>
+                    <!--Other Skills-->
+                    <div class="carousel-item" style="height: 400px;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="card bg-smokey p-4 shadow-lg rounded-4" style="width: 22rem;">
+                                <div class="text-center">
+                                    <i class="bi bi-database display-3 text-warning"></i>
+                                    <h4 class="mt-3">Other Skills & Tools</h4>
+                                    <p class="mb-0">AWS, Figma, GitHub</p>
+                                    <p class="mb-0">Docker, Kubernetes, Overleaf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
+        </div>
 
-            <div class="mb-3">
-                <i class="fab fa-linkedin fa-lg me-2"></i>
-                <a href="https://www.linkedin.com/in/saul-e-mccoy-7a5856303/" target="_blank"
-                    class="text-white text-decoration-none">
-                    LinkedIn Profile
-                </a>
-            </div>
+        <!--Hobbies Section-->
+        <section id="hobbies">
+            <div class="container py-5">
+                <h2 id="title-text">My Hobbies</h2>
 
-            <div class="mb-3">
-                <i class="fab fa-github fa-lg me-2"></i>
-                <a href="https://github.com/SaulMcCoy" target="_blank" class="text-white text-decoration-none">
-                    GitHub Profile
-                </a>
-            </div>
+                <div class="row">
+                   
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card h-100 hobby-card">
+                            <div class="card-img-container">
+                                <div class="hobby-image-placeholder">
+                                    <img src="./images/Elden_Ring.jpg" class="img-fluid rounded shadow"
+                                        height="300px" width="300px" style="border: black 2px solid;">
+                                    <p class="mt-2 mb-0">Elden Ring</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Video Games</h5>
+                                <p class="card-text">
+                                   I've loved playing video games since I was a kid, I loved them so much that I wanted to create games myself hence why I started studying computer science. I play all types of game ranging from World of Warcraft, Persona, Shadow of the Colossus, and even Skate 3 back when I used to skate board. One game that really changed my perspective on gamming was Elden Ring, that game shows how you no matter how many times you get knocked down and lose to a boss always keep going and try again, also the music is amazing and it is visually stunning  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Toast -->
-            <div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 11">
-                <div id="contactToast" class="toast align-items-center text-bg-success border-0" role="alert">
-                    <div class="d-flex">
-                        <div class="toast-body" id="toastMessage">Copied!</div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
-                            data-bs-dismiss="toast"></button>
+                    
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card h-100 hobby-card">
+                            <div class="card-img-container">
+                                <div class="hobby-image-placeholder">
+                                    <img src="./images/thumbnail_IMG_2077.jpg" class="img-fluid rounded shadow"
+                                        height="300px" width="300px" style="border: black 2px solid;">
+                                    <p class="mt-2 mb-0">High School Portfolio Photo</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Photography</h5>
+                                <p class="card-text">
+                                   Before I became a computer science major in highschool I was an art major and I loved photography, I always loved the way an image can tell a story in just a snapshot and how each image has its own feel to it. Although I dont take as many photos as a used to, I still love photography and I used what I learned to help with creating the game in terms of lighting and angles.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card h-100 hobby-card">
+                            <div class="card-img-container">
+                                <div class="hobby-image-placeholder">
+                                    <img src="./images/star_wars.jpg" class="img-fluid rounded shadow"
+                                        height="300px" width="300px" style="border: black 2px solid;">
+                                    <p class="mt-2 mb-0">Star Wars</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Watching Movies</h5>
+                                <p class="card-text">
+                                   I was never truly a fan of movies until one late night when everyone was asleep I randomly selected one of my dads movie that I wasn't allowed to see at the time and that's when I first saw the movie that you see above, Star Wars. Ever since than I started reseaching and appreciating movies more and thats what probably got me into photography.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card h-100 hobby-card">
+                            <div class="card-img-container">
+                                <div class="hobby-image-placeholder">
+                                    <img src="./images/Japan.jpg" class="img-fluid rounded shadow"
+                                        height="300px" width="300px" style="border: black 2px solid;">
+                                    <p class="mt-2 mb-0">Japan</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Traveling </h5>
+                                <p class="card-text">
+                                   When I travel I like to know the people to get the real feel of somewhere I go to and that includes the food and culture. My dream destination is Japan because it's a beautiful place and alot of the games I like come from there. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <script>
-        function copyToClipboard(text, label) {
-            navigator.clipboard.writeText(text).then(() => {
-                const toastMessage = document.getElementById('toastMessage');
-                toastMessage.textContent = `${label} copied!`;
+        <section id="contactMe" class="py-5 bg-dark text-white">
+            <div class="container text-center">
+                <h2 id="title-text" class="mb-4">Contact Me</h2>
 
-                const toast = new bootstrap.Toast(document.getElementById('contactToast'));
-                toast.show();
-            });
-        }
-    </script>
+                <div class="mb-3">
+                    <i class="fas fa-envelope fa-lg me-2"></i>
+                    <button onclick="copyToClipboard('smeccoy03@gmail.com', 'Email')"
+                        class="btn btn-link text-white text-decoration-none p-0">Email</button>
+                </div>
+
+                <div class="mb-3">
+                    <i class="fab fa-linkedin fa-lg me-2"></i>
+                    <a href="https://www.linkedin.com/in/saul-e-mccoy-7a5856303/" target="_blank"
+                        class="text-white text-decoration-none">
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <i class="fab fa-github fa-lg me-2"></i>
+                    <a href="https://github.com/SaulMcCoy" target="_blank" class="text-white text-decoration-none">
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <!-- Toast -->
+                <div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 11">
+                    <div id="contactToast" class="toast align-items-center text-bg-success border-0" role="alert">
+                        <div class="d-flex">
+                            <div class="toast-body" id="toastMessage">Copied!</div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                data-bs-dismiss="toast"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+        <script>
+            function copyToClipboard(text, label) {
+                navigator.clipboard.writeText(text).then(() => {
+                    const toastMessage = document.getElementById('toastMessage');
+                    toastMessage.textContent = `${label} copied!`;
+
+                    const toast = new bootstrap.Toast(document.getElementById('contactToast'));
+                    toast.show();
+                });
+            }
+        </script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

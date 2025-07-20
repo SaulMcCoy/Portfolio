@@ -1,191 +1,297 @@
-/* body{
-    background-color:  #dce0ea;
-} */
+body {
+  transition: all 0.3s ease;
+}
 
-div{
-   /* max-width: 700px;*/
-    /* height: 200px;
+div {
+  /* max-width: 700px;*/
+  /* height: 200px;
     background-color: navy;
     margin: 20px 20px; */
 
 }
 
-br{
-    color: gray;
-    font-weight: 400;
+#aboutMeP {
+  color: azure;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
-#aboutMeP{
-    color: azure;
-    font-family:"Roboto",sans-serif;
-    text-align: center;
-}
-
-/* nav{
-    background-color: #11121A;
-    text-decoration: none;
-    padding-bottom: 10px;
-
-}
-
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
-}
-
-nav li{
-    text-decoration: none;
-}
-
-nav a{
-    color: #B0B2B8;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 200;
-    transition: all 0.3s ease;
-    display: inline-block;
-    position: relative;
-    font-size: 1.2rem;
+/*Navbar section*/
+#modeToggle {
+  border: #10173A 1px solid;
+  transition: all 0.3s ease;
 }
 
 
-nav a:hover{
-    color: snow;
-    text-decoration: none;
-    transform: scale(1.05);
-    box-shadow:  10px 5px 5px #C7A7D3;
-    font-weight: 500;
-
-
-} */
-
-
-#title-text{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #FFFDD0;
+nav {
+  background-color: #11121A;
+  text-decoration: none;
+  padding-bottom: 10px;
+  transition: background-color 0.3s ease
 }
 
-#aboutMe{
-    background-color: navy;
-    align-items: center;
-    padding-bottom: 10%;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 
+}
+
+nav a {
+  color: #B0B2B8;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 200;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+
+nav a:hover {
+  color: snow;
+  text-decoration: none;
+  transform: scale(1.05);
+  box-shadow: 10px 5px 5px #C7A7D3;
+  font-weight: 500;
+
+
+}
+
+
+#title-text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFDD0;
+  transition: background-color 0.3 ease;
+}
+
+/*About me section*/
+#aboutMe {
+  background-color: #121829;
+  align-items: center;
+  padding-bottom: 10%;
+  transition: background-color 0.3 ease;
 }
 
 
 #aboutMe #social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-#aboutMe #social-links a{
-     color: #FFFDD0;
-    
-}
-
-#aboutMe #social-links i:hover{
-     color: orange;
-     transform: scale(1.25);
-     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-     
-    
-}
-
-.social-btn i{
-    font-size: 1.4rem;
-    align-items: center;
-    
-}
-
-#aboutMe h1{
-    text-align: center; 
-    color: #FFFDD0 ; 
-    font-size: 2.5em;  
-    font-family:"Roboto",sans-serif;
-    padding-top: 10%;
+#aboutMe #social-links a {
+  color: #FFFDD0;
+  transition: color 0.3s ease;
 
 }
 
+#aboutMe #social-links i:hover {
+  color: #C7A7D3;
+  transform: scale(1.25);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 
-#experience{
-
-}
-
-#projects{
-    background-color: #10173A;
 
 }
 
-#projectButtons{
-    transform: scale(1.4);
-}
-
-#projectButtons:hover{
-   color: orange;
-   transform: scale(1.6);
-   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+.social-btn i {
+  font-size: 1.4rem;
+  align-items: center;
 
 }
 
-.card{
+#aboutMe h1 {
+  text-align: center;
+  color: #FFFDD0;
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10%;
+  transition: color 0.3s ease;
+}
+
+/*Projects section*/
+#projects {
+  background-color: #121829;
+  padding-top: 20px;
+
+}
+
+#projectButtons {
+  transform: scale(1.4);
+}
+
+#projectButtons:hover {
+  color: #C7A7D3;
+  transform: scale(1.6);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card {
   transition: transform 0.3s, box-shadow 0.3s ease;
   padding: 10px;
 }
 
-.card:hover{
- transform: translateY(-8px) scale(1.02);
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-#technical-skils{
-
+/*Technical skills section*/
+#technical-skills {
+  background-color: #121829;
+  transition: background-color 0.3 ease;
 }
 
-#hobbies{
-
+.bg-smokey {
+  background-color: rgba(33, 37, 41, 0.8);
+  /* dark-gray with opacity */
+  color: white;
+  transition: all 0.3s ease;
 }
 
-#contactMe{
+.carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.carousel-inner {
+  min-height: 300px;
+}
+
+/*Hobbies section*/
+#hobbies {
+  background-color: #121829;
+  align-items: center;
+  padding-bottom: 30px;
+  transition: background-color 0.3 ease;
+}
+
+.hobby-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Contact me section.*/
+#contactMe {
   background-color: navy;
-
+  transition: background-color 0.3 ease;
 }
 
-/* Extra small devices (phones, less than 600px) */
-@media (max-width: 599px) {
-  body {
-    background-color: lightblue;
-  }
+/* Light Mode Section */
+body.light-mode {
+  background-color: #f5f5f5;
 }
 
-/* Small devices (phones and tablets, 600px and up) */
-@media (min-width: 600px) and (max-width: 767px) {
-  body {
-    background-color: lightgreen;
-  }
+body.light-mode nav {
+  background-color: rgba(240, 240, 240, 0.95);
 }
 
-/* Medium devices (tablets in landscape, 768px and up) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: lightyellow;
-  }
+body.light-mode nav a {
+  color: #333;
 }
 
-/* Large devices (laptops/desktops, 1025px and up) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    background-color: lightcoral;
-  }
+body.light-mode nav a:hover {
+  color: #000;
+  box-shadow: 10px 5px 5px rgba(199, 167, 211, 0.5);
 }
 
-/* Extra large devices (large desktops, 1441px and up) */
-@media (min-width: 1441px) {
-  body {
-    background-color: lightgray;
-  }
+body.light-mode .navbar-brand {
+  color: #333 !important;
+}
+
+body.light-mode #modeToggle {
+  border: black 1px solid;
+  color: #333;
+}
+
+body.light-mode #aboutMe {
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+body.light-mode #aboutMe h1,
+body.light-mode #title-text {
+  color: #333;
+}
+
+body.light-mode #aboutMeP {
+  color: #555;
+}
+
+body.light-mode #aboutMe #social-links a {
+  color: #333;
+}
+
+body.light-mode #aboutMe #social-links i:hover {
+  color: #666;
+}
+
+body.light-mode #projects {
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+body.light-mode .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode #technical-skills {
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+body.light-mode .bg-smokey {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode #contactMe {
+  background-color: rgba(200, 200, 200, 0.9);
+  color: #333;
+}
+
+body.light-mode #contactMe h2 {
+  color: white
+}
+
+body.light-mode #hobbies {
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+body.light-mode .hobby-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .hobby-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* body.light-mode .hobby-image-placeholder {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+}
+
+body.light-mode .hobby-image-placeholder:hover {
+  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+} */
+
+/* Carousel controls for light mode */
+body.light-mode .carousel-control-prev-icon,
+body.light-mode .carousel-control-next-icon {
+  filter: invert(1);
 }
